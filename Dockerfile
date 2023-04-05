@@ -28,41 +28,55 @@ USER glen
 RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       atuin \
       aws-cli \
-      packer \
-      terraform \
-      kubectl \
-      k9s \
       bat \
+      bitwise \
       cargo \
       direnv \
       dua-cli \
-      dust \
       duf \
+      dust \
+      eksctl \
+      entr \
       fd \
       github-cli \
       gitui \
       htop \
+      hyperfine \
+      jq \
+      just \
+      k9s \
+      kubectl \
+      kubectx \
+      kubens \
       lf-bin \
       linux-headers \
       man-db \
       man-pages \
+      navi \
       neofetch \
       neovim-nightly-bin \
       neovim-plug-git \
-      nvm-git \
       npm \
+      nvm-git \
+      ouch \
+      packer \
       pacman-contrib \
       pyenv \
       ripgrep \
+      rm-improved \
+      scc \
+      skim \
       starship \
+      stern \
+      terraform \
+      thefuck \
       tldr \
       tmux \
       tree \
+      ts-node \
       unzip \
       viddy \
-      just \
-      delta \
-      entr \
+      wl-clipboard \
       zsh \
       zsh-autosuggestions \
       zsh-history-substring-search \
