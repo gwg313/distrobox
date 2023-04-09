@@ -1,5 +1,9 @@
 FROM archlinux
 
+RUN export LC_ALL=en_US.UTF-8
+RUN export LANG=en_US.UTF-8
+RUN locale-gen en_US.UTF-8
+
 RUN echo '[multilib]' >> /etc/pacman.conf && \
     echo 'Include = /etc/pacman.d/mirrorlist' >> /etc/pacman.conf && \
     pacman --noconfirm -Syyu && \
@@ -33,6 +37,7 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       cargo \
       direnv \
       dua-cli \
+      downgrade \
       duf \
       dust \
       eksctl \
@@ -54,8 +59,7 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       man-pages \
       navi \
       neofetch \
-      neovim-nightly-bin \
-      neovim-plug-git \
+      neovim \
       npm \
       nvm-git \
       ouch \
@@ -76,6 +80,7 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       ts-node \
       unzip \
       viddy \
+      fish \
       wl-clipboard \
       zsh \
       zsh-autosuggestions \
@@ -90,6 +95,6 @@ WORKDIR /home/glen
 
 
 WORKDIR /home/
-CMD ["zsh"]
+CMD ["fish"]
 
 
