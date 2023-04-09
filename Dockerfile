@@ -33,9 +33,12 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       atuin \
       aws-cli \
       bat \
+      openssh \
+      rcm \
       bitwise \
       cargo \
       direnv \
+      colordiff \
       dua-cli \
       downgrade \
       duf \
