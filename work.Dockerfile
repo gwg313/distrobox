@@ -11,6 +11,6 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       kubens \
       packer \
       terraform \
-      ts-node \
+      ts-node
 
 CMD ["fish"]

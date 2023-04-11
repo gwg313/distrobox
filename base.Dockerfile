@@ -76,7 +76,7 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       tree \
       unzip \
       viddy \
-      wl-clipboard \
+      wl-clipboard && \
       pacman -Qtdq | xargs -r pacman --noconfirm -Rcns && \
       paccache -rk0 && \
       rm -rf /home/glen/.cache
