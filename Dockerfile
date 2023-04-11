@@ -30,22 +30,23 @@ USER glen
 
 
 RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
+      ansible \
       atuin \
       aws-cli \
       bat \
-      openssh \
-      rcm \
       bitwise \
       cargo \
-      direnv \
       colordiff \
-      dua-cli \
+      direnv \
       downgrade \
+      dua-cli \
       duf \
       dust \
       eksctl \
       entr \
       fd \
+      fish \
+      git-delta-git \
       github-cli \
       gitui \
       htop \
@@ -53,6 +54,7 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       jq \
       just \
       k9s \
+      keychain \
       kubectl \
       kubectx \
       kubens \
@@ -65,10 +67,12 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       neovim \
       npm \
       nvm-git \
+      openssh \
       ouch \
       packer \
       pacman-contrib \
       pyenv \
+      rcm \
       ripgrep \
       rm-improved \
       scc \
@@ -83,13 +87,7 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       ts-node \
       unzip \
       viddy \
-      fish \
       wl-clipboard \
-      zsh \
-      zsh-autosuggestions \
-      zsh-history-substring-search \
-      zsh-syntax-highlighting \
-      zsh-vi-mode-git && \
       pacman -Qtdq | xargs -r pacman --noconfirm -Rcns && \
       paccache -rk0 && \
       rm -rf /home/glen/.cache
