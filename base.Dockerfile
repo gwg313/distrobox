@@ -30,9 +30,7 @@ USER glen
 
 
 RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
-      ansible \
       atuin \
-      aws-cli \
       bat \
       bitwise \
       cargo \
@@ -42,7 +40,6 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       dua-cli \
       duf \
       dust \
-      eksctl \
       entr \
       fd \
       fish \
@@ -51,13 +48,8 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       gitui \
       htop \
       hyperfine \
-      jq \
       just \
-      k9s \
       keychain \
-      kubectl \
-      kubectx \
-      kubens \
       lf-bin \
       linux-headers \
       man-db \
@@ -69,7 +61,6 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       nvm-git \
       openssh \
       ouch \
-      packer \
       pacman-contrib \
       pyenv \
       rcm \
@@ -79,12 +70,10 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       skim \
       starship \
       stern \
-      terraform \
       thefuck \
       tldr \
       tmux \
       tree \
-      ts-node \
       unzip \
       viddy \
       wl-clipboard \
