@@ -42,7 +42,6 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       dust \
       entr \
       fd \
-      fish \
       git-delta-git \
       github-cli \
       gitui \
@@ -50,6 +49,8 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       hyperfine \
       just \
       keychain \
+      lazydocker \
+      lazygit \
       lf-bin \
       linux-headers \
       man-db \
@@ -57,11 +58,13 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       navi \
       neofetch \
       neovim \
+      nmap \
       npm \
       nvm-git \
       openssh \
       ouch \
       pacman-contrib \
+      parallel \
       pyenv \
       rcm \
       ripgrep \
@@ -76,7 +79,8 @@ RUN sudo -u glen paru --noconfirm --skipreview --useask -S \
       tree \
       unzip \
       viddy \
-      wl-clipboard && \
+      wl-clipboard \
+      zsh && \
       pacman -Qtdq | xargs -r pacman --noconfirm -Rcns && \
       paccache -rk0 && \
       rm -rf /home/glen/.cache
@@ -85,6 +89,6 @@ WORKDIR /home/glen
 
 
 WORKDIR /home/
-CMD ["fish"]
+CMD ["zsh"]
 
 
